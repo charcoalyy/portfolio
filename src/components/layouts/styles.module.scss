@@ -55,17 +55,16 @@
       padding: 24px 40px;
 
       display: flex;
-      gap: 40px;
+      gap: 60px;
 
       .devStat {
-        max-width: 175px;
-        border: 1px solid red;
+        width: 175px;
 
         h1 {
           font-size: 10px;
           text-transform: uppercase;
           letter-spacing: 1px;
-          margin-bottom: 2px;
+          margin-bottom: 12px;
           opacity: 0.75;
         }
 
@@ -83,7 +82,7 @@
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 40px;
 
     max-height: 100vh;
     overflow-y: auto;
@@ -93,12 +92,21 @@
         font-size: 10px;
         text-transform: uppercase;
         letter-spacing: 1px;
-        margin-bottom: 2px;
+        margin-bottom: 12px;
         opacity: 0.75;
       }
 
+      ul,
       p {
         font-size: 14px;
+      }
+
+      ul {
+        padding-left: 12px;
+      }
+
+      li {
+        margin-bottom: 8px;
       }
     }
   }

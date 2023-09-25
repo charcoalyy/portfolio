@@ -29,7 +29,15 @@ const DevProject = ({ project }: DevProjectProps) => {
         {Object.entries(project.desc).map(([key, value]) => (
           <div className={styles.devDesc}>
             <h1>{key}</h1>
-            {Array.isArray(value) ? <p>BULLET NEEDED</p> : <p>{value}</p>}
+            {Array.isArray(value) ? (
+              <ul>
+                {value.map((bullet) => (
+                  <li>{bullet}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>{value}</p>
+            )}
           </div>
         ))}
       </div>
