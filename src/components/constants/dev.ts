@@ -1,3 +1,18 @@
+export interface ProjectType {
+  title: string;
+  img: string;
+  links: {
+    label: string;
+    link: string;
+  }[];
+  stats: {
+    time: string;
+    tech: string;
+    team: string;
+  };
+  desc: { [key: string]: string | string[] };
+}
+
 export const thumbnails = [
   {
     title: "thinkRF",
@@ -36,21 +51,6 @@ export const thumbnails = [
   },
 ];
 
-export interface ProjectType {
-  title: string;
-  img: string;
-  links: {
-    label: string;
-    link: string;
-  }[];
-  stats: {
-    time: string;
-    tech: string;
-    team: string;
-  };
-  desc: { [key: string]: string | string[] };
-}
-
 export const thinkRF: ProjectType = {
   title: "thinkRF",
   img: "monke",
@@ -70,5 +70,27 @@ export const thinkRF: ProjectType = {
     ],
     delivery:
       "With my senior developer leaving for vacation during the last week, I took full ownership of the product. I developed and tested all features required for the successful deployment of a minimum viable product to be presented to demo users.",
+  },
+};
+
+export const fyelabsExpress: ProjectType = {
+  title: "FYELABS Express",
+  img: "monke",
+  links: [{ label: "Live", link: "https://express.fyelabs.com/" }],
+  stats: {
+    tech: "Next.js, Typescript",
+    team: "3 backend developers",
+    time: "1 month",
+  },
+  desc: {
+    premise:
+      "The product development company I was interning at wanted a web portal to streamline project requests to cut down the administrative labour required from project managers, reduce inconsistency in project requirement definition, and cut down meeting time.",
+    work: [
+      "Consulted with company CEO to devise and develop a multi-page, user-friendly form that would cover all necessary parameters for minimum project definition",
+      "Developed a real time chat function for clients and project managers",
+      "Developed organizations within the portal for enterprise clients to share project requests",
+    ],
+    delivery:
+      "I took full ownership over the product and developed 90% of its features. After demoing the project to the company CEO and all senior software developers, the portal was launched at the 2023 Collision Conference in Toronto!",
   },
 };
