@@ -18,3 +18,19 @@ h2,
 p {
   margin: 0;
 }
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: none;
+  color: none;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #eaeaea;
+  border-radius: 10px;
+}

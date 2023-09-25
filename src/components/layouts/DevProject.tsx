@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { ProjectType } from "../constants/dev";
 import styles from "./styles.module.scss";
 
@@ -6,13 +7,15 @@ interface DevProjectProps {
 }
 
 const DevProject = ({ project }: DevProjectProps) => {
+  const navigate = useNavigate();
+
   return (
     <div className={styles.devContainer}>
       <div className={styles.devCover}>
         <div className={styles.devCoverImg}>
           <img src={`/dev/${project.img}.png`}></img>
         </div>
-        <p>BACK</p>
+        <p onClick={() => navigate(-1)}>BACK</p>
         <div>
           <h1>{project.title}</h1>
           {project.links.map((link) => (
