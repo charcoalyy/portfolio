@@ -1,1 +1,56 @@
 @import "../../styles/variables.module.scss";
+
+// for dev project
+.devContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100vh;
+
+  .devCover {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: grey;
+
+    p {
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: $white-color;
+    }
+
+    button {
+      background-color: $white-color;
+      color: $dark-color;
+      transition: all 0.3s;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      padding: 12px 32px;
+      margin: 12px 0;
+      margin-right: 8px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1px;
+
+      &:hover {
+        background-color: $dark-color;
+        color: $white-color;
+      }
+    }
+
+    .devInfo {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 24px 32px;
+    }
+  }
+
+  .devText {
+    padding: 60px 40px;
+  }
+}
