@@ -11,7 +11,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: grey;
+    background: rgba(0, 0, 0, 0.5);
+
+    .devCoverImg {
+      position: absolute;
+      padding: 0;
+      top: 0;
+      left: 0;
+      z-index: -3;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        opacity: 0.5;
+      }
+    }
 
     p {
       text-transform: uppercase;
@@ -83,9 +99,11 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    background-color: $white-color;
 
     max-height: 100vh;
     overflow-y: auto;
+    cursor: default;
 
     .devDesc {
       h1 {

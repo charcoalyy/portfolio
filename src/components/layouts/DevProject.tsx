@@ -9,6 +9,9 @@ const DevProject = ({ project }: DevProjectProps) => {
   return (
     <div className={styles.devContainer}>
       <div className={styles.devCover}>
+        <div className={styles.devCoverImg}>
+          <img src={`/dev/${project.img}.png`}></img>
+        </div>
         <p>BACK</p>
         <div>
           <h1>{project.title}</h1>

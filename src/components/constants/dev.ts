@@ -38,6 +38,7 @@ export const thumbnails = [
 
 export interface ProjectType {
   title: string;
+  img: string;
   links: {
     label: string;
     link: string;
@@ -52,6 +53,7 @@ export interface ProjectType {
 
 export const thinkRF: ProjectType = {
   title: "thinkRF",
+  img: "monke",
   links: [],
   stats: {
     tech: "Next.js, Typescript, Rust, Docker, PostgreSQL",
