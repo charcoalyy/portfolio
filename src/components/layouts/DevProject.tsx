@@ -1,21 +1,37 @@
+import { ProjectType } from "../constants/dev";
 import styles from "./styles.module.scss";
 
-const DevProject = () => {
+interface DevProjectProps {
+  project: ProjectType;
+}
+
+const DevProject = ({ project }: DevProjectProps) => {
   return (
     <div className={styles.devContainer}>
       <div className={styles.devCover}>
         <p>BACK</p>
         <div>
-          <h1>Title</h1>
-          <button>Live</button>
-          <button>Code</button>
+          <h1>{project.title}</h1>
+          {project.links.map((link) => (
+            <button>{link.label}</button>
+          ))}
           <div className={styles.devInfo}>
-            this is where info would go, map it out in molecules
+            {Object.entries(project.stats).map(([label, value]) => (
+              <div className={styles.devStat}>
+                <h1>{label}</h1>
+                <p>{value}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
       <div className={styles.devText}>
-        <div>this is where info would go, map it out in molecules</div>
+        {Object.entries(project.desc).map(([key, value]) => (
+          <div className={styles.devDesc}>
+            <h1>{key}</h1>
+            {Array.isArray(value) ? <p>BULLET NEEDED</p> : <p>{value}</p>}
+          </div>
+        ))}
       </div>
     </div>
   );
