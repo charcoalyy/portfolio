@@ -16,35 +16,35 @@ export interface ProjectType {
 export const thumbnails = [
   {
     title: "thinkRF",
-    desc: "allowing businesses to visually interface with large datasets",
+    desc: "Allowing businesses to visually interface with large datasets",
     image: "monke",
     tags: ["frontend", "backend"],
     path: "/dev/thinkRF",
   },
   {
     title: "FYELABS Express",
-    desc: "streamlining client management",
+    desc: "Streamlining client management",
     image: "monke",
     tags: ["frontend"],
     path: "/dev/fyelabs-express",
   },
   {
     title: "LLIF",
-    desc: "bringing actionable data to the medical field",
+    desc: "Bringing actionable data to the medical field",
     image: "monke",
     tags: ["frontend"],
     path: "/dev/llif",
   },
   {
     title: "DirectU",
-    desc: "your degree without the hassle",
+    desc: "Your degree without the hassle",
     image: "monke",
     tags: ["hackathon", "frontend", "backend"],
     path: "/dev/directu",
   },
   {
     title: "Stride",
-    desc: "local delivery, optimized",
+    desc: "Local delivery, optimized",
     image: "monke",
     tags: ["hackathon", "frontend"],
     path: "/dev/stride",
@@ -54,7 +54,7 @@ export const thumbnails = [
 export const thinkRF: ProjectType = {
   title: "thinkRF",
   img: "monke",
-  links: [],
+  links: [{ label: "Client Site", link: "https://thinkrf.com/" }],
   stats: {
     tech: "Next.js, Typescript, Rust, Docker, PostgreSQL",
     team: "1 senior frontend developer, 2 backend developers",
@@ -62,10 +62,11 @@ export const thinkRF: ProjectType = {
   },
   desc: {
     premise:
-      "As an enterprise client of my primary company, a spectrum analysis business wanted to bring to their clients a user dashboard that would visualize wireless network data from 25+ countries in real time with interactive maps, configurable tables, and complex, dynamic filtering.",
+      "As an enterprise client of my primary company, a spectrum analysis business wanted to bring to their clients a user dashboard that would visualize wireless network data  in real time with interactive maps, configurable tables, and complex, dynamic filtering.",
     work: [
       "Defined the database schema for user configurations",
       "Developed 10+ key features of the dashboard, including interactive map markers with popups, visualization of connections between map markers, insightful data tables incorporating graphs, and filtering functionalities necessitating global state management",
+      "Integrated the MapTiler API to enable real-time visualization of RF spectrum network data from 25+ countries",
       "Developed RESTful API endpoints with backend-for-frontend patterns to enable the dashboard to retrieve, save, and reset configurations by interacting with a PostgreSQL database",
     ],
     delivery:
@@ -92,5 +93,79 @@ export const fyelabsExpress: ProjectType = {
     ],
     delivery:
       "I took full ownership over the product and developed 90% of its features. After demoing the project to the company CEO and all senior software developers, the portal was launched at the 2023 Collision Conference in Toronto!",
+  },
+};
+
+export const llif: ProjectType = {
+  title: "LLIF Healthcare",
+  img: "monke",
+  links: [{ label: "Client Site", link: "https://www.llifhealthcare.com/" }],
+  stats: {
+    tech: "Next.js, Typescript",
+    team: "1 senior frontend developer",
+    time: "3 weeks",
+  },
+  desc: {
+    premise:
+      "As an enterprise client of my primary company, a healthcare startup wanted to develop a user dashboard consolidating aggregated physician/hospital data and displaying insights and analytics to better inform high-level physician decisions.",
+    work: "I conceptualized and development all features of the frontend product, including a custom UI component library and data visualization tools.",
+    delivery:
+      "After demoing the project to the startup founders, we were able to successfully ship the minimum viable product in a shorter timeframe than originally anticipated!",
+  },
+};
+
+export const directu: ProjectType = {
+  title: "DirectU",
+  img: "monke",
+  links: [
+    { label: "Demo", link: "https://directu.onrender.com/" },
+    {
+      label: "Devpost",
+      link: "https://devpost.com/software/untitled-project-84yezbhn7asu",
+    },
+  ],
+  stats: {
+    tech: "React, Typescript, Flask, Python, MongoDB, Cohere",
+    team: "2 backend developers, 1 frontend developer & UX designer",
+    time: "36 hours",
+  },
+  desc: {
+    premise:
+      "As part of Hack the North 2023, we tackled postsecondary course selection. Comparing past student course reviews scraped from the internet against a user's personalized profile, we assigned scores to each course to determine the ones best fit into the user's 4-year degree, optimized to their goals and learning preferences.",
+    work: [
+      "Took on a leadership role to define project scope, user flow, requirements, and architecture",
+      "Spearheaded visual design and frontend development of the user interface with Figma and React, including delegating tasks to another frontend developer and implementing all key product features",
+      "Developed all API endpoints with Flask, enabling communication between our frontend, backend, and database",
+      "Deployed the frontend and backend server to a staging environment for live demos alongside defining CI/CD practices for future work on the project",
+    ],
+    delivery:
+      "After demoing to two pairs of judges, our team took home the number one Best Use of Cohere out of 248 participating teams at the hackathon!",
+  },
+};
+
+export const stride: ProjectType = {
+  title: "Stride",
+  img: "monke",
+  links: [
+    {
+      label: "Devpost",
+      link: "https://devpost.com/software/placeholder-hatmfc",
+    },
+  ],
+  stats: {
+    tech: "React, Typescript, Node.js",
+    team: "2 backend developers, 1 UX/UI designer",
+    time: "36 hours",
+  },
+  desc: {
+    premise:
+      "As part of Hack the 6ix 2023, we tackled inefficient delivery. Due to packages being indiscriminately sent to packaging centres regardless of distance to the customer, local deliveries take longer than necessary. We built an API for e-commerce platforms to (a) calculate viability of local delivery and (b) assign local drivers to the task, UberEats-style. We also built a web app to allow buyers to track their packages in real time and interface with drivers.",
+    work: [
+      "Took a leadership role to define project scope, requirements, and architecture",
+      "Developed the user interface independently with React, translating all wireframes with full faith in under 36 hours",
+      "Leveraged the Google Maps API and managed backend APIs to pinpoint driver location and driving path in real time",
+    ],
+    delivery:
+      "After we deployed our project with Google Cloud, I led the project presentation to 6 industry professional judges to showcase our results!",
   },
 };

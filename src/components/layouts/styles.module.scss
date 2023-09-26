@@ -64,6 +64,11 @@
         background-color: $dark-color;
         color: $white-color;
       }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
 
     .devInfo {

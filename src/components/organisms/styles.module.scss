@@ -34,3 +34,20 @@
   margin-top: -1px;
   gap: 12px;
 }
+
+// for about
+.aboutContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+
+  .aboutText {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+}

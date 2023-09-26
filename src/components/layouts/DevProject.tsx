@@ -19,7 +19,14 @@ const DevProject = ({ project }: DevProjectProps) => {
         <div>
           <h1>{project.title}</h1>
           {project.links.map((link) => (
-            <button>{link.label}</button>
+            <a
+              key={link.label}
+              href={link.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>{link.label}</button>
+            </a>
           ))}
           <div className={styles.devInfo}>
             {Object.entries(project.stats).map(([label, value]) => (

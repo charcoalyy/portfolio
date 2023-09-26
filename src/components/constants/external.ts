@@ -5,7 +5,7 @@ export const socials = [
 ];
 
 export const tabs = [
+  { label: "ABOUT", path: "/about" },
   { label: "DEVELOPMENT", path: "/development" },
   { label: "DESIGN", path: "/design" },
-  { label: "ABOUT", path: "/about" },
 ];
