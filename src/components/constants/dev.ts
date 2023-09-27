@@ -53,8 +53,8 @@ export const thumbnails = [
 
 export const thinkRF: ProjectType = {
   title: "thinkRF",
-  img: "monke",
-  links: [{ label: "Client Site", link: "https://thinkrf.com/" }],
+  img: "thinkrf",
+  links: [{ label: "Client", link: "https://thinkrf.com/" }],
   stats: {
     tech: "Next.js, Typescript, Rust, Docker, PostgreSQL",
     team: "1 senior frontend developer, 2 backend developers",
@@ -76,7 +76,7 @@ export const thinkRF: ProjectType = {
 
 export const fyelabsExpress: ProjectType = {
   title: "FYELABS Express",
-  img: "monke",
+  img: "fyelabs-express",
   links: [{ label: "Live", link: "https://express.fyelabs.com/" }],
   stats: {
     tech: "Next.js, Typescript",
@@ -89,6 +89,7 @@ export const fyelabsExpress: ProjectType = {
     work: [
       "Consulted with company CEO to devise and develop a multi-page, user-friendly form that would cover all necessary parameters for minimum project definition",
       "Developed a real time chat function for clients and project managers",
+      "Integrated the Stripe API to securely store and manage client payment information",
       "Developed organizations within the portal for enterprise clients to share project requests",
     ],
     delivery:
@@ -98,8 +99,8 @@ export const fyelabsExpress: ProjectType = {
 
 export const llif: ProjectType = {
   title: "LLIF Healthcare",
-  img: "monke",
-  links: [{ label: "Client Site", link: "https://www.llifhealthcare.com/" }],
+  img: "llif",
+  links: [{ label: "Client", link: "https://www.llifhealthcare.com/" }],
   stats: {
     tech: "Next.js, Typescript",
     team: "1 senior frontend developer",
@@ -116,7 +117,7 @@ export const llif: ProjectType = {
 
 export const directu: ProjectType = {
   title: "DirectU",
-  img: "monke",
+  img: "directu",
   links: [
     { label: "Demo", link: "https://directu.onrender.com/" },
     {
@@ -145,7 +146,7 @@ export const directu: ProjectType = {
 
 export const stride: ProjectType = {
   title: "Stride",
-  img: "monke",
+  img: "directu",
   links: [
     {
       label: "Devpost",
