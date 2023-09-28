@@ -6,9 +6,6 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.halfContainer}>
-        <div className={styles.halfImage}>
-          <img src="/monke.png"></img>
-        </div>
         <div className={styles.halfText}>
           <h1>alina</h1>
           <h2>颖思</h2>
@@ -23,8 +20,6 @@ const Home = () => {
             </a>
           ))}
         </div>
-      </div>
-      <div>
         <Tabs />
       </div>
     </div>

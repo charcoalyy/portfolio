@@ -21,7 +21,6 @@ const Tabs = () => {
               <Chips chips={about.community} label="Community" />
               <Chips chips={about.leisurely} label="Leisurely" />
             </div>
-            <img src="/monke.png"></img>
           </div>
         );
       case "DEVELOPMENT":
