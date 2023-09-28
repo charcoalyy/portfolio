@@ -1,5 +1,30 @@
 @import "../../styles/variables.module.scss";
 
+// for slider nav
+.sliderNav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  background-color: rgba(108, 108, 108, 0.5);
+
+  padding: 8px;
+  border-radius: 5px;
+
+  .slide {
+    height: 8px;
+    width: 8px;
+    background-color: $grey-50;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+
+    &__active {
+      @extend .slide;
+      background-color: $white-color;
+    }
+  }
+}
+
 // for tab
 .tab {
   display: flex;

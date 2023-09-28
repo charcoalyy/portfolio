@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { ProjectType } from "../constants/dev";
 import styles from "./styles.module.scss";
+import Slider from "@organisms/Slider";
 
 interface DevProjectProps {
   project: ProjectType;
@@ -12,12 +13,8 @@ const DevProject = ({ project }: DevProjectProps) => {
   return (
     <div className={styles.devContainer}>
       <div className={styles.devCover}>
-        <div className={styles.devCoverImg}>
-          <img src={`/dev/${project.img}.png`}></img>
-        </div>
-        <p onClick={() => navigate(-1)}>BACK</p>
-        <div>
-          <h1>{project.title}</h1>
+        <Slider dir="dev/thinkrf" images={["home", "filter", "login"]} />
+        {/* <div className={styles.devLinks}>
           {project.links.map((link) => (
             <a
               key={link.label}
@@ -28,6 +25,12 @@ const DevProject = ({ project }: DevProjectProps) => {
               <button>{link.label}</button>
             </a>
           ))}
+        </div> */}
+      </div>
+      <div className={styles.devText}>
+        <p onClick={() => navigate(-1)}>BACK</p>
+        <div>
+          <h1>{project.title}</h1>
           <div className={styles.devInfo}>
             {Object.entries(project.stats).map(([label, value]) => (
               <div className={styles.devStat}>
@@ -37,8 +40,6 @@ const DevProject = ({ project }: DevProjectProps) => {
             ))}
           </div>
         </div>
-      </div>
-      <div className={styles.devText}>
         {Object.entries(project.desc).map(([key, value]) => (
           <div className={styles.devDesc}>
             <h1>{key}</h1>

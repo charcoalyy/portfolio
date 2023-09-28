@@ -14,19 +14,22 @@ const Slider = ({ dir, images }: SliderProps) => {
     setCurrent(slide);
   };
 
+  console.log(current);
+
   // TODO: set so that you can slide around visually to current
   // TODO: style
 
   return (
     <div className={styles.sliderContainer}>
+      <img src={`/${dir}/${images[current]}.png`}></img>
+      {/* <img src={`/dev/thinkrf/home.png`}></img> */}
       <div className={styles.sliderNavContainer}>
-        <SliderNav count={images.length} setSlide={handleSlide} />
+        <SliderNav
+          count={images.length}
+          current={current}
+          setSlide={handleSlide}
+        />
       </div>
-      {images.map((image, i) => (
-        <div key={i} className={styles.imageContainer}>
-          <img src={`/${dir}/${image}.png`}></img>
-        </div>
-      ))}
     </div>
   );
 };

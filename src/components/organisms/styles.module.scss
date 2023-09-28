@@ -1,5 +1,27 @@
 @import "../../styles/variables.module.scss";
 
+// for slider
+.sliderContainer {
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 60px;
+
+  img {
+    width: 100%;
+    box-shadow: 20px 20px 106px 30px rgba(42, 42, 42, 0.18);
+  }
+
+  .sliderNavContainer {
+    width: 20%;
+    overflow: hidden;
+  }
+}
+
 // for tabs
 .tabsContainer {
   margin: 80px 20px;
