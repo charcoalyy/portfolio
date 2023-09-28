@@ -55,7 +55,7 @@ export const thumbnails = [
 
 export const thinkRF: ProjectType = {
   title: "thinkRF",
-  bg: "https://www.rethinktokyo.com/sites/default/files/styles/article-full/public/6914271104_a80fb51807_k_2_1.jpg?itok=nPpVWaXT",
+  bg: "https://www.grupoelecnor.com/storage/media/files/shares/noticias/32-sistema-de-transmision-cantareira-brasil.jpg",
   imgDir: "thinkrf",
   imgs: ["home", "filter", "login"],
   links: [{ label: "Client", link: "https://thinkrf.com/" }],
@@ -80,7 +80,7 @@ export const thinkRF: ProjectType = {
 
 export const fyelabsExpress: ProjectType = {
   title: "FYELABS Express",
-  bg: "https://www.rethinktokyo.com/sites/default/files/styles/article-full/public/6914271104_a80fb51807_k_2_1.jpg?itok=nPpVWaXT",
+  bg: "https://farm2.staticflickr.com/1973/30837851047_48ccb6d576_b.jpg",
   imgDir: "fyelabs-express",
   imgs: ["landing", "form1", "form2", "create", "pay", "project"],
   links: [{ label: "Live", link: "https://express.fyelabs.com/" }],
@@ -105,7 +105,7 @@ export const fyelabsExpress: ProjectType = {
 
 export const llif: ProjectType = {
   title: "LLIF Healthcare",
-  bg: "https://www.rethinktokyo.com/sites/default/files/styles/article-full/public/6914271104_a80fb51807_k_2_1.jpg?itok=nPpVWaXT",
+  bg: "https://impeccabuild.com.au/wp-content/uploads/2020/07/Medical-Clinic-Interior-Design-Ideas-ImpeccaBuild-1200x675.jpg",
   imgDir: "llif",
   imgs: ["data", "insights"],
   links: [{ label: "Client", link: "https://www.llifhealthcare.com/" }],
@@ -125,7 +125,7 @@ export const llif: ProjectType = {
 
 export const directu: ProjectType = {
   title: "DirectU",
-  bg: "https://www.rethinktokyo.com/sites/default/files/styles/article-full/public/6914271104_a80fb51807_k_2_1.jpg?itok=nPpVWaXT",
+  bg: "https://static.designboom.com/wp-content/uploads/2020/08/kazuyo-sejima-japan-women-university-library-tokyo-designboom-1800b.jpg",
   imgDir: "directu",
   imgs: ["start", "form1", "form2", "form3", "dashboard", "side1", "side2"],
   links: [
@@ -156,9 +156,19 @@ export const directu: ProjectType = {
 
 export const stride: ProjectType = {
   title: "Stride",
-  bg: "https://www.rethinktokyo.com/sites/default/files/styles/article-full/public/6914271104_a80fb51807_k_2_1.jpg?itok=nPpVWaXT",
-  imgDir: "directu",
-  imgs: [],
+  bg: "https://www.fedex.com/content/dam/fedex/us-united-states/NNC/images/2018/Q4/NNC_Hero_06434201_V2_1142389920.jpg",
+  imgDir: "stride",
+  imgs: [
+    "ui1",
+    "ui2",
+    "ui3",
+    "slide1",
+    "slide2",
+    "slide3",
+    "slide4",
+    "slide5",
+    "slide6",
+  ],
   links: [
     {
       label: "Devpost",
