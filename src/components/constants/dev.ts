@@ -1,6 +1,8 @@
 export interface ProjectType {
   title: string;
-  img: string;
+  bg: string;
+  imgDir: string;
+  imgs: string[];
   links: {
     label: string;
     link: string;
@@ -53,7 +55,9 @@ export const thumbnails = [
 
 export const thinkRF: ProjectType = {
   title: "thinkRF",
-  img: "thinkrf",
+  bg: "https://www.rethinktokyo.com/sites/default/files/styles/article-full/public/6914271104_a80fb51807_k_2_1.jpg?itok=nPpVWaXT",
+  imgDir: "thinkrf",
+  imgs: ["home", "filter", "login"],
   links: [{ label: "Client", link: "https://thinkrf.com/" }],
   stats: {
     tech: "Next.js, Typescript, Rust, Docker, PostgreSQL",
@@ -76,7 +80,9 @@ export const thinkRF: ProjectType = {
 
 export const fyelabsExpress: ProjectType = {
   title: "FYELABS Express",
-  img: "fyelabs-express",
+  bg: "https://www.rethinktokyo.com/sites/default/files/styles/article-full/public/6914271104_a80fb51807_k_2_1.jpg?itok=nPpVWaXT",
+  imgDir: "fyelabs-express",
+  imgs: ["landing", "form1", "form2", "create", "pay", "project"],
   links: [{ label: "Live", link: "https://express.fyelabs.com/" }],
   stats: {
     tech: "Next.js, Typescript",
@@ -99,7 +105,9 @@ export const fyelabsExpress: ProjectType = {
 
 export const llif: ProjectType = {
   title: "LLIF Healthcare",
-  img: "llif",
+  bg: "https://www.rethinktokyo.com/sites/default/files/styles/article-full/public/6914271104_a80fb51807_k_2_1.jpg?itok=nPpVWaXT",
+  imgDir: "llif",
+  imgs: ["data", "insights"],
   links: [{ label: "Client", link: "https://www.llifhealthcare.com/" }],
   stats: {
     tech: "Next.js, Typescript",
@@ -117,7 +125,9 @@ export const llif: ProjectType = {
 
 export const directu: ProjectType = {
   title: "DirectU",
-  img: "directu",
+  bg: "https://www.rethinktokyo.com/sites/default/files/styles/article-full/public/6914271104_a80fb51807_k_2_1.jpg?itok=nPpVWaXT",
+  imgDir: "directu",
+  imgs: ["start", "form1", "form2", "form3", "dashboard", "side1", "side2"],
   links: [
     { label: "Demo", link: "https://directu.onrender.com/" },
     {
@@ -146,7 +156,9 @@ export const directu: ProjectType = {
 
 export const stride: ProjectType = {
   title: "Stride",
-  img: "directu",
+  bg: "https://www.rethinktokyo.com/sites/default/files/styles/article-full/public/6914271104_a80fb51807_k_2_1.jpg?itok=nPpVWaXT",
+  imgDir: "directu",
+  imgs: [],
   links: [
     {
       label: "Devpost",

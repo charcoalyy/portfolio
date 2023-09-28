@@ -87,3 +87,16 @@
     }
   }
 }
+
+// for back
+.backButton {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: 0.75;
+  }
+  img {
+    height: 36px;
+    width: 36px;
+  }
+}
