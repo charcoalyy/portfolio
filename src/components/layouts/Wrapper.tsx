@@ -10,7 +10,7 @@ const Wrapper = ({ children, bgImg }: WrapperProps) => {
       style={{
         width: "100vw",
         height: "100vh",
-        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url("${bgImg}")`,
+        backgroundImage: `linear-gradient( rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) ), url("${bgImg}")`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         display: "flex",
