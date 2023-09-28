@@ -21,26 +21,18 @@
 }
 
 // for tabs
-.tabsContainer {
-  margin: 80px 20px;
-}
-
 .tabs {
   display: flex;
 
   .tab {
     padding: 8px 12px;
-    border: 2px solid $dark-color;
-    border-bottom: none;
     font-size: 12px;
-    margin-left: -1px;
-    margin-top: -1px;
     cursor: pointer;
 
     &__active {
       @extend .tab;
-      color: $white-color;
-      background-color: $dark-color;
+      color: $dark-color;
+      background-color: rgba(0, 0, 0, 0.05);
     }
   }
 }
@@ -48,26 +40,59 @@
 .panel {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.05);
   padding: 32px;
-  margin-left: -1px;
-  margin-top: -1px;
   gap: 12px;
+
+  height: 360px;
+  overflow-y: auto;
 }
 
 // for about
-.aboutContainer {
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
-  // gap: 24px;
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
-  .aboutText {
+  p {
+    font-size: 14px;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    h1 {
+      font-size: 60px;
+    }
+
+    h2 {
+      font-size: 48px;
+    }
+  }
+
+  .socials {
+    display: flex;
+    gap: 10px;
+    font-weight: 300;
+    font-size: 14px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .chips {
     display: flex;
     flex-direction: column;
     gap: 12px;
-
-    p {
-      font-size: 14px;
-    }
+    margin-top: 20px;
   }
 }
