@@ -4,7 +4,7 @@ export const about = {
   para2:
     "Currently seeking Summer 2024 Internships + making my way through The Tatami Galaxy",
   professional: [
-    "SWE Intern @FYELABS",
+    "Software Developer @FYELABS",
     "Tech @HOSA Canada",
     "SE/BME Student @McMaster",
   ],
