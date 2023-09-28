@@ -27,7 +27,8 @@
 
 // for tab
 .tab {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
   gap: 20px;
   height: 60px;
   cursor: pointer;
@@ -50,6 +51,18 @@
     h2 {
       font-size: 12px;
       font-weight: 400;
+    }
+  }
+
+  .tabImg {
+    border-radius: 5px;
+    min-width: 100px;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
     }
   }
 
