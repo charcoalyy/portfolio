@@ -10,7 +10,7 @@ const About = () => {
         <h1>alina</h1>
         <h2>颖思</h2>
       </div>
-      <p>{about.para1}</p>
+      <p>{about.bio}</p>
       <div className={styles.socials}>
         {socials.map((link) => (
           <a

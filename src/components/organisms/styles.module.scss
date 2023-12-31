@@ -1,5 +1,9 @@
 @import "../../styles/variables.module.scss";
 
+p {
+  font-size: 12px;
+}
+
 // for slider
 .sliderContainer {
   height: 100%;
@@ -54,23 +58,20 @@
 .about {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-
-  p {
-    font-size: 14px;
-  }
+  gap: 12px;
 
   .title {
     display: flex;
     align-items: center;
     gap: 4px;
+    margin-bottom: -16px;
 
     h1 {
-      font-size: 60px;
+      font-size: 80px;
     }
 
     h2 {
-      font-size: 48px;
+      font-size: 64px;
       color: $primary-color;
     }
   }
@@ -79,12 +80,11 @@
     display: flex;
     gap: 10px;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 12px;
 
     a {
       text-decoration: none;
       color: inherit;
-      transition: all 0.3s ease;
 
       &:hover {
         color: $primary-color;
