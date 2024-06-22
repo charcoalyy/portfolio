@@ -25,7 +25,7 @@ const About = () => {
       </div>
       <div className={styles.chips}>
         <Chips chips={about.professional} label="Professionally" />
-        <Chips chips={about.community} label="Community" />
+        <Chips chips={about.community} label="Socially" />
         <Chips chips={about.leisurely} label="Leisurely" />
       </div>
     </div>
