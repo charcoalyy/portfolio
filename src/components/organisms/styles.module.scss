@@ -100,3 +100,19 @@ p {
     margin-top: 20px;
   }
 }
+
+// for projects
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  justify-content: flex-end;
+  height: 100%;
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}

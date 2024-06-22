@@ -1,16 +1,32 @@
-import { useState } from "react"
+import { useMemo, useState } from "react"
 import styles from "./styles.module.scss"
 
-interface InfoboxProps {
+export interface InfoboxProps {
   title: string
+  type: string
   tag: string
   points: {
     [key: string]: string
   }
 }
 
-const Infobox = ({ title, tag, points }: InfoboxProps) => {
+const rectangle = "public/dev/rectangle.svg"
+const rectangleHover = "public/dev/rectangle_hover.svg"
+const ellipse = "public/dev/ellipse.svg"
+const ellipseHover = "public/dev/ellipse_hover.svg"
+
+const Infobox = ({ title, type, tag, points }: InfoboxProps) => {
   const [hover, setHover] = useState(false)
+
+  const renderShape = useMemo(() => {
+    switch (type) {
+      case "project":
+        return hover ? ellipseHover : ellipse
+      case "internship":
+      default:
+        return hover ? rectangleHover : rectangle
+    }
+  }, [hover, type])
 
   return (
     <div
@@ -18,12 +34,7 @@ const Infobox = ({ title, tag, points }: InfoboxProps) => {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <img
-        src={
-          hover ? "public/dev/rectangle_hover.svg" : "public/dev/rectangle.svg"
-        }
-        className={styles.solidBox}
-      ></img>
+      <img src={renderShape} className={styles.solidBox}></img>
 
       <div className={hover ? styles.boxLabel__hover : styles.boxLabel}>
         <h1>{title}</h1>
