@@ -1,5 +1,5 @@
 export const about = {
-  bio: "Software engineering student excited about building cool things and meeting cool people. Deeking Summer 2025 internships. Watching Mononoke (⺣◡⺣)♡*",
+  bio: "Software engineering student who lives for building cool things and meeting cool people. Seeking Summer 2025 internships and watching Mononoke (⺣◡⺣)♡*",
   professional: ["Software Engineer Intern @Wealthsimple"],
   community: [
     "Design Lead @McMaster Design League",

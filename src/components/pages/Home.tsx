@@ -1,4 +1,3 @@
-import Tabs from "@organisms/Tabs"
 import styles from "./styles.module.scss"
 import About from "@organisms/About"
 
