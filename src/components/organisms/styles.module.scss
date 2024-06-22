@@ -4,56 +4,6 @@ p {
   font-size: 12px;
 }
 
-// for slider
-.sliderContainer {
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.95);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 40px;
-
-  img {
-    width: 100%;
-    max-height: 320px;
-    object-fit: cover;
-    object-position: 50% 0%;
-    box-shadow: 20px 20px 106px 30px rgba(42, 42, 42, 0.18);
-  }
-}
-
-// for tabs
-.tabs {
-  display: flex;
-
-  .tab {
-    padding: 12px 16px;
-    letter-spacing: 0.5px;
-    font-size: 12px;
-    cursor: pointer;
-    border-radius: 5px 5px 0 0;
-
-    &__active {
-      @extend .tab;
-      color: $dark-color;
-      background-color: rgba(0, 0, 0, 0.05);
-    }
-  }
-}
-
-.panel {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.05);
-  padding: 32px;
-  gap: 12px;
-
-  height: 360px;
-  overflow-y: auto;
-}
-
 // for about
 .about {
   display: flex;
@@ -91,13 +41,6 @@ p {
         color: $primary-color;
       }
     }
-  }
-
-  .chips {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 20px;
   }
 }
 
