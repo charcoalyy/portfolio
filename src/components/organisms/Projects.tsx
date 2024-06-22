@@ -1,17 +1,16 @@
-// import Infobox from "@molecules/Infobox"
+import Infobox from "@molecules/Infobox"
+import { projects } from "../constants/projects"
 
 const Projects = () => {
   return (
     <div>
-      {/* <Infobox
-        title="FYELABS"
-        tag="#internship"
-        points={{
-          used: "Next.js, Typescript, Rust, PostgreSQL",
-          did: "build a really cool website with lots of dynamic filtering",
-          shipped: "deployed live to demo users",
-        }}
-      /> */}
+      {projects.map((project) => (
+        <Infobox
+          title={project.title}
+          tag={project.tag}
+          points={project.points}
+        />
+      ))}
     </div>
   )
 }
