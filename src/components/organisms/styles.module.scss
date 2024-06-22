@@ -53,6 +53,12 @@ p {
   justify-content: flex-end;
   height: 100%;
 
+  .title {
+    color: $grey-10;
+    font-style: italic;
+    font-size: 12px;
+  }
+
   .projects {
     display: flex;
     flex-direction: column;

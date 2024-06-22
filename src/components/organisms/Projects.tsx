@@ -5,6 +5,9 @@ import styles from "./styles.module.scss"
 const Projects = () => {
   return (
     <div className={styles.projectsContainer}>
+      <div className={styles.title}>
+        <h1>I'm developing for...</h1>
+      </div>
       <div className={styles.projects}>
         {internships.map((project) => (
           <Infobox
