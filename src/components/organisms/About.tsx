@@ -1,7 +1,6 @@
-import Chips from "@molecules/Chips";
-import { about } from "../constants/about";
-import styles from "./styles.module.scss";
-import { socials } from "../constants/external";
+import { about } from "../constants/about"
+import styles from "./styles.module.scss"
+import { socials } from "../constants/external"
 
 const About = () => {
   return (
@@ -11,6 +10,7 @@ const About = () => {
         <h2>颖思</h2>
       </div>
       <p>{about.bio}</p>
+      <p>{about.current}</p>
       <div className={styles.socials}>
         {socials.map((link) => (
           <a
@@ -23,13 +23,8 @@ const About = () => {
           </a>
         ))}
       </div>
-      <div className={styles.chips}>
-        <Chips chips={about.professional} label="Professionally" />
-        <Chips chips={about.community} label="Socially" />
-        <Chips chips={about.leisurely} label="Leisurely" />
-      </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About
