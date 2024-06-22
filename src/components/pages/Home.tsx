@@ -4,7 +4,7 @@ import About from "@organisms/About"
 const Home = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.halfContainer}>
+      <div className={styles.content}>
         <section className={styles.halfSection}>
           <About />
         </section>
