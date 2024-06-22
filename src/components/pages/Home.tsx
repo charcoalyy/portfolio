@@ -1,3 +1,4 @@
+import Projects from "@organisms/Projects"
 import styles from "./styles.module.scss"
 import About from "@organisms/About"
 
@@ -8,7 +9,9 @@ const Home = () => {
         <section className={styles.halfSection}>
           <About />
         </section>
-        <section className={styles.halfSection}>{/* <Tabs /> */}</section>
+        <section className={styles.halfSection}>
+          <Projects />
+        </section>
       </div>
     </div>
   )
