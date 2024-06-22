@@ -10,10 +10,10 @@ export interface InfoboxProps {
   }
 }
 
-const rectangle = "public/dev/rectangle.svg"
-const rectangleHover = "public/dev/rectangle_hover.svg"
-const ellipse = "public/dev/ellipse.svg"
-const ellipseHover = "public/dev/ellipse_hover.svg"
+const rectangle = "/dev/rectangle.svg"
+const rectangleHover = "/dev/rectangle_hover.svg"
+const ellipse = "/dev/ellipse.svg"
+const ellipseHover = "/dev/ellipse_hover.svg"
 
 const Infobox = ({ title, type, tag, points }: InfoboxProps) => {
   const [hover, setHover] = useState(false)
