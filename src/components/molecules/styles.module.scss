@@ -7,12 +7,24 @@
   gap: 16px;
   color: $grey-10;
 
+  // switch to vertical alignment
+  @media only screen and (max-width: $phone-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .solidBox {
     max-height: 36px;
+
+    // shrink size
+    @media only screen and (max-width: $phone-width) {
+      max-height: 24px;
+    }
   }
 
   .boxLabel {
-    // align with rectangle on the side
+    // align the label with the top of the shape on the side
     margin-top: -4px;
 
     h1 {
