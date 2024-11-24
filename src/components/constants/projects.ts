@@ -7,8 +7,9 @@ export const internships: InfoboxProps[] = [
     tag: "Software engineer intern",
     points: {
       used: "Ruby, Rails, Typescript, GraphQL",
-      to: "develop and maintain performant, scalable API gateways between microservices with high observability",
-      shipped: "coming soon!!!!!",
+      to: "Develop and maintain performant, scalable API gateways between microservices with high observability",
+      shipped:
+        "Schema observability across 10+ microservices to prevent bad changes from breaking production",
     },
   },
   {
@@ -17,7 +18,7 @@ export const internships: InfoboxProps[] = [
     tag: "Software developer intern",
     points: {
       used: "Next.js, Typescript, Rust, PostgreSQL",
-      to: "build user-friendly frontend applications and REST APIs for enterprise clients",
+      to: "Build user-friendly web applications and digital products for startup and SME clients",
       shipped:
         "MVPs for real-time analytics dashboards, customer web portals, and more",
     },
@@ -31,8 +32,8 @@ export const projects: InfoboxProps[] = [
     tag: "UofTHacks 2024",
     points: {
       used: "React, Flask, PostgreSQL, OpenAI, DALL-E 3, Cohere, Instagram Graph API",
-      to: "develop a marketing tool that uses AI to generate editable ad campaigns directly postable to social media",
-      won: "best use of AI/ML in business",
+      to: "Develop a marketing tool that uses AI to generate editable ad campaigns directly postable to social media",
+      won: "Best use of AI/ML in business",
     },
     link: "https://devpost.com/software/llm-large-language-marketing",
   },
@@ -42,8 +43,8 @@ export const projects: InfoboxProps[] = [
     tag: "Hack the North 2023",
     points: {
       used: "React, Flask, Cohere, MongoDB, Selenium",
-      to: "develop an interactive, AI-based degree planner with personalized pro/con descriptions",
-      won: "best use of Cohere",
+      to: "Develop an interactive, AI-based degree planner with personalized pro/con analysis",
+      won: "Best use of Cohere",
     },
     link: "https://devpost.com/software/untitled-project-84yezbhn7asu",
   },
