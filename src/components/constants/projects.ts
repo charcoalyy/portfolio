@@ -4,23 +4,23 @@ export const internships: InfoboxProps[] = [
   {
     title: "Wealthsimple",
     type: "internship",
-    tag: "Software engineer intern",
+    tag: "Software Engineer Intern",
     points: {
       used: "Ruby, Rails, Typescript, GraphQL",
-      to: "Develop and maintain performant, scalable API gateways between microservices with high observability",
+      to: "Develop performant, scalable API gateways to help developers scale and iterate quicker",
       shipped:
-        "Schema observability across 10+ microservices to prevent bad changes from breaking production",
+        "Schema observability across 10+ microservices to prevent incidents via instant schema validation",
     },
   },
   {
     title: "FYELABS",
     type: "internship",
-    tag: "Software developer intern",
+    tag: "Software Developer Intern",
     points: {
       used: "Next.js, Typescript, Rust, PostgreSQL",
       to: "Build user-friendly web applications and digital products for startup and SME clients",
       shipped:
-        "MVPs for real-time analytics dashboards, customer web portals, and more",
+        "MVPs for real-time analytics dashboards, CRM software, and more",
     },
   },
 ]
@@ -32,7 +32,7 @@ export const projects: InfoboxProps[] = [
     tag: "UofTHacks 2024",
     points: {
       used: "React, Flask, PostgreSQL, OpenAI, DALL-E 3, Cohere, Instagram Graph API",
-      to: "Develop a marketing tool that uses AI to generate editable ad campaigns directly postable to social media",
+      to: "Develop an AI-based marketing tool that generates editable ads directly postable to social media",
       won: "Best use of AI/ML in business",
     },
     link: "https://devpost.com/software/llm-large-language-marketing",

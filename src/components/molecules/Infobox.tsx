@@ -20,10 +20,7 @@ const Infobox = ({ title, type, tag, points, link }: InfoboxProps) => {
   const [hover, setHover] = useState(false)
 
   const handleClick = () => {
-    console.log("handling click....")
-    console.log(link)
     if (link) {
-      console.log("there's a link!")
       window.open(link, "_blank", "noopener,noreferrer")
     }
   }

@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div className={styles.projectsContainer}>
       <div className={styles.title}>
-        <h1>I've developed for...</h1>
+        <h1>I've been up to...</h1>
       </div>
       <div className={styles.scroll}>
         <div className={styles.projects}>
