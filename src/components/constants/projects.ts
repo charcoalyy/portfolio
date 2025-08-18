@@ -2,9 +2,20 @@ import { InfoboxProps } from "@molecules/Infobox"
 
 export const internships: InfoboxProps[] = [
   {
+    title: "MongoDB",
+    type: "internship",
+    tag: "Software Engineer Intern 2025",
+    points: {
+      used: "React, Typescript, Storybook",
+      to: "Maintain an open-source component library to accelerate developer productivity",
+      shipped:
+        "v1 of the LeafyGreen ProgressBar (plus side quests to improve CI performance)",
+    },
+  },
+  {
     title: "Wealthsimple",
     type: "internship",
-    tag: "Software Engineer Intern",
+    tag: "Software Engineer Intern 2024",
     points: {
       used: "Ruby, Rails, Typescript, GraphQL",
       to: "Develop performant, scalable API gateways to help developers scale and iterate quicker",
@@ -15,7 +26,7 @@ export const internships: InfoboxProps[] = [
   {
     title: "FYELABS",
     type: "internship",
-    tag: "Software Developer Intern",
+    tag: "Software Developer Intern 2023",
     points: {
       used: "Next.js, Typescript, Rust, PostgreSQL",
       to: "Build user-friendly web applications and digital products for startup and SME clients",

@@ -1,5 +1,5 @@
 export const about = {
-  bio: "Software engineering student always hungry for something new. Incoming at MongoDB for Summer 2025!",
+  bio: "Software engineering student. Previously an intern at MongoDB and Wealthsimple. Always hungry for something new!",
   current:
-    "Previously Software Engineer Intern at Wealthsimple. Currently Design Lead at McMaster Design League. Otherwise found drawing digital gouache portraits, reading narrative nonfiction, or watching that one show everyone was raving over several years ago ꒰ᐢ. .ᐢ꒱₊˚⊹",
+    "For fun, leading the visual design team at McMaster Design League. Otherwise found colouring outside the lines, writing short stories, or watching that one show everyone loved several years ago ꒰ᐢ. .ᐢ꒱₊˚⊹",
 }
