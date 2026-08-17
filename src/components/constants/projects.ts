@@ -4,9 +4,20 @@ export const internships: InfoboxProps[] = [
   {
     title: "MongoDB",
     type: "internship",
+    tag: "Software Engineer Intern 2026",
+    points: {
+      used: "C++",
+      to: "Improve observability and performance monitoring to reduce incident resolution time",
+      shipped:
+        "Low-overhead OpenTelemetry tracing and metrics across distributed server components",
+    },
+  },
+  {
+    title: "MongoDB",
+    type: "internship",
     tag: "Software Engineer Intern 2025",
     points: {
-      used: "React, Typescript, Storybook",
+      used: "React, Typescript",
       to: "Maintain an open-source component library to accelerate developer productivity",
       shipped:
         "v1 of the LeafyGreen ProgressBar (plus side quests to improve CI performance)",
@@ -17,10 +28,10 @@ export const internships: InfoboxProps[] = [
     type: "internship",
     tag: "Software Engineer Intern 2024",
     points: {
-      used: "Ruby, Rails, Typescript, GraphQL",
+      used: "Ruby, Typescript, GraphQL",
       to: "Develop performant, scalable API gateways to help developers scale and iterate quicker",
       shipped:
-        "Schema observability across 10+ microservices to prevent incidents via instant schema validation",
+        "Instant schema validation across 10+ microservices to prevent breaking changes",
     },
   },
   {
@@ -28,14 +39,15 @@ export const internships: InfoboxProps[] = [
     type: "internship",
     tag: "Software Developer Intern 2023",
     points: {
-      used: "Next.js, Typescript, Rust, PostgreSQL",
-      to: "Build user-friendly web applications and digital products for startup and SME clients",
+      used: "Rust, Typescript, PostgreSQL",
+      to: "Build web applications and digital products for startup and SME clients",
       shipped:
         "MVPs for real-time analytics dashboards, CRM software, and more",
     },
   },
 ]
 
+// TODO: archive
 export const projects: InfoboxProps[] = [
   {
     title: "LLM ↗",

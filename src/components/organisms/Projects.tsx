@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div className={styles.projectsContainer}>
       <div className={styles.title}>
-        <h1>I've been up to...</h1>
+        <h1>Last seen at...</h1>
       </div>
       <div className={styles.scroll}>
         <div className={styles.projects}>
@@ -21,7 +21,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className={styles.projects}>
+        {/* <div className={styles.projects}>
           {projects.map((project) => (
             <Infobox
               key={project.title}
@@ -32,7 +32,7 @@ const Projects = () => {
               link={project.link}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   )
