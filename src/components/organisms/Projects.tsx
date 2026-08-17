@@ -1,5 +1,5 @@
 import Infobox from "@molecules/Infobox"
-import { internships, projects } from "../constants/projects"
+import { internships } from "../constants/projects"
 import styles from "./styles.module.scss"
 
 const Projects = () => {
@@ -20,19 +20,6 @@ const Projects = () => {
             />
           ))}
         </div>
-
-        {/* <div className={styles.projects}>
-          {projects.map((project) => (
-            <Infobox
-              key={project.title}
-              title={project.title}
-              type="project"
-              tag={project.tag}
-              points={project.points}
-              link={project.link}
-            />
-          ))}
-        </div> */}
       </div>
     </div>
   )
